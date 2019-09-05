@@ -1,0 +1,64 @@
+
+[
+    {
+        "name":"电影",
+        "title":"影院热映",
+        "color": "#FFAC2D"
+    },
+    {
+        "name":"电视",
+        "title":"正在热播",
+      "color": "#FF4055"
+    },
+    {
+        "name":"图书",
+        "title":"畅销排行",
+      "color": "#4F9DED"
+    },
+    {
+        "name":"同城",
+        "title":"周末活动",
+      "color": "#FFC46C"
+    },
+  
+    {
+        "name":"小组",
+        "title":"志趣相投",
+      "color": "#2384E8"
+    },
+    {
+        "name":"音乐",
+        "title":"新碟榜",
+      "color": "#3BA94D"
+    },
+    {
+        "name":"阅读",
+        "title":"电子书",
+      "color": "#42BD56"
+    },
+    {
+        "name":"游戏",
+        "title":"虚拟世界",
+      "color": "#CC3344"
+    },
+    {
+        "name":"应用",
+        "title":"玩手机",
+      "color": "#CC3344"
+    },
+    {
+        "name":"东西",
+        "title":"心爱之吻",
+      "color": "#CC3344"
+    },
+    {
+        "name":"FM",
+        "title":"红心歌单",
+      "color": "#CC3344"
+    },
+    {
+        "name":"市集",
+        "title":"购买原创",
+      "color": "#CC3344"
+    }
+  ]

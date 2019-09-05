@@ -1,0 +1,12 @@
+var Mock=require("mockjs");
+Mock.mock("/one","get",require("./data/one.json"))
+Mock.mock("/two","get",require("./data/two.json"))
+Mock.mock("/movie","get",require("./data/newmovie.json"))
+Mock.mock("/index","get",require("./data/index.json"))
+Mock.mock("/find","get",require("./data/findmovie.json"))
+Mock.mock("/book","get",require("./data/book.json"))
+Mock.mock("/goodbook","get",require("./data/goodbook.json"))
+Mock.mock("/fenlei","get",require("./data/fenlei.json"))
+Mock.mock("/xiaozu","get",require("./data/xiaozu.json"))
+Mock.mock("/movieNav","get",require("./data/movieNav.json"))
+Mock.mock("/movieType","get",require("./data/movieType.json"))
