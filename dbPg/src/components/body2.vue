@@ -20,8 +20,7 @@ export default {
         flex-basis: 49%;
         height: 0.5rem;
         align-items: center;
-        border-right: 0.01rem solid gray;
-        border-top:  0.01rem solid gray;
+        border-top:  0.01rem solid #f3f3f3;
         display:flex; 
         justify-content: space-between;
         

@@ -1,5 +1,6 @@
 <template>
-    <div class="radio_login">
+    <div>
+    <div class="radio_login" >
            <div class="radio_log_left">
             <i class="iconfont icon-weidenglu-touxiang"></i>
            <span>请先登录</span>
@@ -9,11 +10,30 @@
                <i class="iconfont icon-xiangji"></i>
            </div>
        </div>
+        <!-- <div class="use" v-else>
+            <h5>欢迎用户{{serr}}</h5>
+        </div> -->
+    </div>
 </template>
 
 <script>
+// import {saveCookie, getCookie} from "../../static/js/cook";
 export default {
-    
+    data(){
+        return{
+            serr:'',
+            brr:''
+        }
+    },
+    // created() {
+        
+    //     if(getCookie("link")){
+    //     var str=getCookie("link");
+    //    this.serr=JSON.parse(str).usename;
+    //    this.brr=JSON.parse(str).inkl;
+    //     }
+    // },
+
 }
 </script>
 
@@ -44,4 +64,9 @@ export default {
     align-items: center;
     justify-content: space-between;
 }
+.use{
+    font-size: 0.16rem;
+    color:red;
+}
+
 </style>

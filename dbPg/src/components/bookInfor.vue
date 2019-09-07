@@ -56,7 +56,7 @@ export default {
     height: 1.0rem;
 }
 .big_1 h3{
-    line-height: 0rem;
+    /* line-height: 0rem; */
     font-size: 0.18rem;
     
     

@@ -1,6 +1,5 @@
 <template>
      <div class="dezh_box"> 
-        
         <input type="text" v-model="name" placeholder="用户">
         <input type="password" v-model="passw" placeholder="密码">
         <button @click="send()">{{title}}</button>
@@ -70,6 +69,7 @@ export default {
         align-items: center;
     } 
     .dezh_box input{
+        font-size: 0.16rem;
         width: 2.8rem;
         height: 0.55rem;
         margin-bottom: 0.1rem;

@@ -47,7 +47,7 @@ export default {
 }
 .ra_boxTop h3{
     font-size: 0.18rem;
-    line-height: 0rem;
+    /* line-height: 0rem; */
 }
 .ra_boxTop p{
     font-size: 0.14rem;
@@ -63,7 +63,6 @@ export default {
 }
 .ra_boxBotoom{
     width: 3.0rem;
-
     justify-content: space-between;
     display: flex;
     flex-direction: column;

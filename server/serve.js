@@ -46,6 +46,13 @@ http.get("/zhuce",function(req,res){
 
 });
 
+http.use(session({
+    secret:'aksdjdqkwhkjh',//设置签名密钥 内容可以任意填写
+    cookie: {maxAge:100*1000 },//设置cookie的过期时间 例：80s后session和相应的cookie失效过期
+    resave:true,//强制保存 如果session没有被修改也要重新保存
+    saveUninitialized:false//如果原先没有session那么就设置 否则不设置
+    }));
+
 http.get("/login",function(req,res){
     var usename=req.query.usename;
     var usepassw=req.query.usepassw;
@@ -57,6 +64,9 @@ http.get("/login",function(req,res){
                } else{
                 useInfor.find({name:usename,passw:passwMd5}).then((ok)=>{
                     if(ok.length>0){
+                         //设置session
+                         req.session.inkl=true;
+                         req.session.usename=usename;
                       
                         res.send({mss:"登陆成功",status:200,link:2,session:req.session});
                     }else if(ok.length==0){
@@ -67,7 +77,18 @@ http.get("/login",function(req,res){
                 })
                }   
     })
+});
+
+http.get("/",function(req,res){
+    console.log(req.session.inkl);
+    // res.send(req.session.inkl);
+        if(req.session.inkl==true){
+            res.send({mss:"用户登陆过",status:200,link:6,usename:req.session.usename});
+        }else{
+            res.send({mss:"用户没有登录",status:200,link:7});
+        }
 })
+
 http.listen(3000,function(){
     console.log("连接我");
 })

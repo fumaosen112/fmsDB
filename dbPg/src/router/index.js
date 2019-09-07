@@ -16,6 +16,10 @@ import infor from "../page/infor"
 Vue.use(Router)
 
 
+
+
+
+
 export default new Router({
   routes: [
     {

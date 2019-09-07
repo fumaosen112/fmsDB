@@ -3,8 +3,8 @@
           <div class="radio_boxTop_m">
               <p>打开app,浏览更多</p>
               <div class="m">
-                   <button class="btn btn-default m_1" type="submit" >极速下载</button>
-                   <button class="btn btn-default m_2" type="submit">打开</button>
+                   <button class="m_1" type="submit" >极速下载</button>
+                   <button class="m_2" type="submit">打开</button>
               </div>
           </div>
        </div>

@@ -6,7 +6,7 @@
 </div>
 <div class="big">
    
-    <smallbox v-for="(v,i) in text" :key="i" :tess="v.movieName" :urll="v.img" :dd="v.id"></smallbox>
+    <smallbox v-for="(v,i) in text" :key="i" :tess="v.movieName" :urll="v.img" :dd="v.id" :xx="v.num"></smallbox>
 </div>
 
 </div>
@@ -30,8 +30,9 @@ export default {
     display: flex;
     overflow: auto;
     align-items: center;
-    margin-top:0.1rem;
-    margin-bottom: 0.1rem;
+    height: 2.0rem;
+    /* margin-top:0.1rem; */
+    /* margin-bottom: 0.1rem; */
     /* background-color: orange; */
 }
 .big_nav{
