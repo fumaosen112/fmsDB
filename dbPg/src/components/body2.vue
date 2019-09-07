@@ -2,7 +2,7 @@
   
         <li>
             <span>{{text}}</span>
-            <router-link :to="href">》</router-link>
+            <router-link :to="href"><i class="iconfont icon-youjiantou"></i></router-link>
         </li>
   
 </template>
